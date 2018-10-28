@@ -1,0 +1,12 @@
+$.ajax({ 
+	    'url': 'test.php', 
+	    'async': false, 
+	    'type': 'POST', 
+	    'data': {'do': 'a', 'num': '1'}, 
+	    'dataType': 'text', 
+	    'success': function(msg){ 
+	        alert(msg); 
+	    'error': function(){ 
+	        alert('系統異常!請重新整理再試一次!'); 
+	    } 
+	}); 
